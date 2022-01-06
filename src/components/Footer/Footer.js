@@ -1,5 +1,5 @@
 import React from 'react';
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
+import { AiFillFacebook, AiFillGithub, AiFillInstagram, AiFillLinkedin, AiFillMail } from 'react-icons/ai';
 
 import { SocialIcons } from '../Header/HeaderStyles';
 import { CompanyContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, SocialContainer, SocialIconsContainer } from './FooterStyles';
@@ -23,6 +23,12 @@ const Footer = () => {
         </SocialIcons>
         <SocialIcons href="https://www.linkedin.com/in/adityamalik3/">
           <AiFillLinkedin size="3rem" />
+        </SocialIcons>
+        <SocialIcons href="https://www.instagram.com/ben0399/">
+          <AiFillInstagram size="3rem" />
+        </SocialIcons>
+        <SocialIcons href="https://www.facebook.com/">
+          <AiFillFacebook size="3rem" />
         </SocialIcons>
       </SocialIconsContainer>
     </FooterWrapper>
