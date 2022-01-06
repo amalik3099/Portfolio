@@ -47,7 +47,11 @@ const Timeline = () => {
       <SectionDivider/>
       <SectionTitle main>About Me</SectionTitle>
       <SectionText>
-      The purpose of JavaScript Mastery is to help aspiring and established developers to take their development skills to the next level and build awesome apps.
+      I am currently pursuing a graduate degree in Computer Science at Columbia University, specializing in Machine Learning. <br />
+      <br />
+      As an engineering student at Columbia, I am always searching for projects and ideas that can benefit the medical industry and our community. 
+      My interests lie in robotics, artificial intelligence, and automation and I have worked on several projects and research papers in the field. 
+      My goal for the future is to further develop my skills and apply them to research and pioneer new technologies.
       </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>

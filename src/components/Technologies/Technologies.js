@@ -1,5 +1,8 @@
 import React from 'react';
-import { DiFirebase, DiReact, DiZend } from 'react-icons/di';
+import { DiFirebase, DiReact, DiZend, DiPython } from 'react-icons/di';
+import { FaRobot } from 'react-icons/fa';
+import {GiBrain} from 'react-icons/gi';
+import {SiScikitlearn} from 'react-icons/si';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
 
@@ -9,16 +12,54 @@ const Technologies = () =>  (
     <SectionTitle main>Technologies</SectionTitle>
     <SectionText>
       I have worked with a range of technologies in the software world. 
-      From Back-end to the front-end world.
+      From Machine learning and robotics, to full-stack development.
     </SectionText>
     <List>
+    <ListItem>
+        <DiPython size="3rem" />
+        <ListContainer>
+          <ListTitle>Languages</ListTitle>
+          <ListParagraph>
+            Python <br />
+            Java <br />
+            C/C++ <br />
+            MATLAB <br />
+          </ListParagraph>
+        </ListContainer>
+      </ListItem>
+      <ListItem>
+        <GiBrain size="3rem" />
+        <ListContainer>
+          <ListTitle>ML</ListTitle>
+          <ListParagraph>
+            TensorFlow <br />
+            scikit-learn <br />
+            PyTorch <br />
+            Keras <br />
+          </ListParagraph>
+        </ListContainer>
+      </ListItem>
+      <ListItem>
+        <FaRobot size="3rem" />
+        <ListContainer>
+          <ListTitle>Robotics</ListTitle>
+          <ListParagraph>
+            OpenCV <br />
+            ROS <br />
+            Rviz <br />
+            Gazebo <br />
+          </ListParagraph>
+        </ListContainer>
+      </ListItem>
       <ListItem>
         <DiReact size="3rem" />
         <ListContainer>
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
-            Experience with <br />
-            React.js 
+            HTML <br />
+            CSS <br />
+            Javascript <br />
+            React.js <br />
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -28,17 +69,21 @@ const Technologies = () =>  (
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
             Experience with <br />
-            Node and Databases
+            Node.js <br />
+            MongoDB <br />
+            AWS <br />
           </ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
         <DiZend size="3rem" />
         <ListContainer>
-          <ListTitle>UI/UX</ListTitle>
+          <ListTitle>Other Tools</ListTitle>
           <ListParagraph>
-            Experience with <br />
-            Figma
+            Git/Github <br />
+            Unix/Linux <br />
+            Solidworks (CSWA Certified) <br />
+            AutoCAD <br />
           </ListParagraph>
         </ListContainer>
       </ListItem>
