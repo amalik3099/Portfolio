@@ -7,4 +7,3 @@ This porfolio contains all the projects and coursework I have worked on. Each pr
 
 Happy Viewing! If you would like to connect with me, feel free to add me on LinkedIn or simply send me an email! 
 
-![Portfolio Website](https://i.ibb.co/WgPMpts/image.png)
