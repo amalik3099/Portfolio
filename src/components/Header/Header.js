@@ -3,19 +3,19 @@ import React from 'react';
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin, AiFillMail } from 'react-icons/ai';
 import { DiCssdeck } from 'react-icons/di';
 
-import { Container, Div1, Div2, Div3, NavLink, SocialIcons, Span} from './HeaderStyles';
+import { Container, Div1, Div2, Div3, NavLink, SocialIcons, Span } from './HeaderStyles';
 
-const Header = () =>  (
+const Header = () => (
   <Container>
     <Div1>
-      <Link href="/">
-        <a style={{display: "flex", alignItems: "center", color: "white", marginBottom: "20" }}>
+      <Link href="#home">
+        <a style={{ display: "flex", alignItems: "center", color: "white", marginBottom: "20" }}>
           <DiCssdeck size="3rem" /> <Span>Aditya Malik</Span>
         </a>
       </Link>
     </Div1>
     <Div2>
-    <li>
+      <li>
         <Link href="#about">
           <NavLink>About Me</NavLink>
         </Link>
@@ -37,7 +37,7 @@ const Header = () =>  (
       </li>
     </Div2>
     <Div3>
-      <SocialIcons href="https://github.com/amalik3099"> 
+      <SocialIcons href="https://github.com/amalik3099">
         <AiFillGithub size="3rem" />
       </SocialIcons>
       <SocialIcons href="https://www.linkedin.com/in/adityamalik3/">

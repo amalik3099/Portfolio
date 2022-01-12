@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Link from 'next/link';
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
 import { LeftSection } from './HeroStyles';
@@ -13,9 +13,11 @@ const Hero = (props) => (
         My Personal Portfolio
       </SectionTitle>
       <SectionText>
-        I am a MS in Computer Science student at Columbia University, specializing in Machine Learning and Robotics.
+        I am an MS student in Computer Science at Columbia University, specializing in Machine Learning and Robotics.
       </SectionText>
-      <Button onclick={() => window.location.href="https://www.google.com"}>Learn More</Button>
+      <Link href="#about">
+        <Button>Learn More</Button>
+      </Link>
     </LeftSection>
   </section>
 );
