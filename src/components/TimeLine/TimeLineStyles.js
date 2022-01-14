@@ -152,3 +152,66 @@ export const CarouselButtonDot = styled.div`
   width: 3px;
   height: 3px;
 `
+
+export const Img = styled.img`
+  width:91%;
+  height:91%;
+  object-fit: cover;
+  overflow: hidden;
+`
+
+export const Intro = styled.div`
+  background: ${props => props.theme.colors.background1};
+  color: ${props => props.theme.colors.primary1};
+  display: flex;
+`
+
+export const Left = styled.div`
+  flex: 0.5;
+  overflow: hidden;
+`
+
+export const Right = styled.div`
+  flex: 0.5;
+  position: relative;
+`
+
+export const ImgContainer = styled.div`
+  flex: 0.5;
+  overflow: hidden;
+  width: 500px;
+  height: 500px;
+  background-color: crimson;
+  border-radius: 50%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  float: right;
+`
+
+export const Wrapper = styled.div`
+  width: 100%;
+  height: 100%;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`
+
+export const H1 = styled.h1`
+  font-size: 60px;
+  margin: 10px 0;
+`
+
+export const H2 = styled.h2`
+  font-size: 35px;
+`
+
+export const H3 = styled.h3`
+  font-size: 30px;
+`
+
+export const Span = styled.span`
+  font-size: 30px;
+  color: crimson;
+`

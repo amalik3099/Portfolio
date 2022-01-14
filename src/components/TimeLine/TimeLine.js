@@ -1,14 +1,16 @@
 import React, { useState, useRef, useEffect } from 'react';
-
 import { CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer, CarouselItem, CarouselItemImg, CarouselItemText, CarouselItemTitle, CarouselMobileScrollNode } from './TimeLineStyles';
+import { Img, Intro, Left, Right, ImgContainer, Wrapper, Span, H1, H2, H3 } from './TimeLineStyles';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { TimeLineData } from '../../constants/constants';
+import Typewriter from 'typewriter-effect';
 
 const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
 
 const Timeline = () => {
   const [activeItem, setActiveItem] = useState(0);
   const carouselRef = useRef();
+  const textRef = useRef();
 
   const scroll = (node, left) => {
     return node.scrollTo({ left, behavior: 'smooth' });
@@ -19,7 +21,7 @@ const Timeline = () => {
 
     if (carouselRef.current) {
       const scrollLeft = Math.floor(carouselRef.current.scrollWidth * 0.7 * (i / TimeLineData.length));
-      
+
       scroll(carouselRef.current, scrollLeft);
     }
   }
@@ -42,16 +44,65 @@ const Timeline = () => {
     window.addEventListener('resize', handleResize);
   }, []);
 
+  // useEffect(() => {
+  //   init(textRef.current, {
+  //     showCursor: true,
+  //     backDelay: 1500,
+  //     backSpeed: 60,
+  //     strings: ["Robotics", "Machine Learning", "Artificial Intelligence", "Software Development"],
+  //   });
+  // }, []);
+
   return (
     <Section id="about">
-      <SectionDivider/>
+      <SectionDivider />
       <SectionTitle main>About Me</SectionTitle>
-      <SectionText>
-      I am currently pursuing a graduate degree in Computer Science at Columbia University, specializing in Machine Learning. <br />
+      <Intro>
+        <Left>
+          <ImgContainer>
+            <Img src='/images/professional profile pic .png' alt='' />
+          </ImgContainer>
+        </Left>
+        <Right>
+          <Wrapper>
+            <H2>Hi There, I'm</H2>
+            <H1>Aditya Malik</H1>
+            <br />
+            <H3>I'm a</H3>
+            <Span>
+              <Typewriter
+                onInit={(typewriter) => {
+                  typewriter
+                    .typeString("Software Developer")
+                    .pauseFor(1500)
+                    .deleteAll()
+                    .typeString("Roboticist")
+                    .pauseFor(1500)
+                    .deleteAll()
+                    .typeString("ML/AI Researcher")
+                    .pauseFor(1500)
+                    .deleteAll()
+                    .typeString("F1 Enthusiast")
+                    .pauseFor(1500)
+                    .deleteAll()
+                    .start();
+                }}
+              />
+            </Span>
+          </Wrapper>
+        </Right>
+      </Intro>
       <br />
-      As an engineering student at Columbia, I am always searching for projects and ideas that can benefit the medical industry and our community. 
-      My interests lie in robotics, artificial intelligence, and automation and I have worked on several projects and research papers in the field. 
-      My goal for the future is to further develop my skills and apply them to research and pioneer new technologies.
+      {/* Continue with old */}
+      {/* <div>
+        <Img src='/images/professional profile pic .png' />
+      </div> */}
+      <SectionText>
+        I am currently pursuing a post-graduate degree in Computer Science at Columbia University, specializing in Machine Learning. <br />
+        <br />
+        As an engineering student at Columbia, I am always searching for projects and ideas that can benefit the medical industry and our community.
+        My interests lie in robotics, artificial intelligence, and automation and I have worked on several projects and research papers in the field.
+        My goal for the future is to further develop my skills and apply them to research and pioneer new technologies.
       </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
