@@ -85,6 +85,8 @@ const Timeline = () => {
                     .typeString("F1 Enthusiast")
                     .pauseFor(1500)
                     .deleteAll()
+                    .typeString("MS CS Student at Columbia University")
+                    .pauseFor(1500)
                     .start();
                 }}
               />
